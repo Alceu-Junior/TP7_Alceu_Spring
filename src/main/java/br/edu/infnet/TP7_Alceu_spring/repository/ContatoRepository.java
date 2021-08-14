@@ -1,11 +1,10 @@
-package repository;
+package br.edu.infnet.TP7_Alceu_spring.repository;
 
 import java.util.Collection;
 import java.util.HashMap;
 import org.springframework.stereotype.Repository;
-import org.springframework.beans.factory.annotation.Autowired;
 
-import model.Contato;
+import br.edu.infnet.TP7_Alceu_spring.usuarios.Contato;
 
 
 @Repository
@@ -28,6 +27,10 @@ public class ContatoRepository {
     public Contato obter(int id) {
         
         return this.contatos.get(id);
+    }
+    
+    public void adiciona(Contato contato) {
+    	contatos.put(null, contato);
     }
     
 }

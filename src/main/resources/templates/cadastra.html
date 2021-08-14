@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>Página de cadstro</title>
 </head>
 <body>
-
-	<div>
-		<div>Nome: </div><span></span>
-		<div>E-mail:</div><span></span>
-		<div>Telefone:</div><span></span>
-		<br></br>
-	</div>
+<form action="/addcadastro" method="POST">
+  <div class="form-group">
+    <label for="nome">Seu nome:</label>
+    <input type="text" class="form-control" id="nome" aria-describedby="emailHelp" placeholder="Te chamo de?">
+    <small id="nome" class="form-text text-muted">Qual é o seu nome?</small>
+  </div>
+  <div class="form-group">
+    <label for="email">Seu email:</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email aqui">
+    <small id="email" class="form-text text-muted">Cadastre seu e-mail</small>
+  </div>
+  <div class="form-group">
+    <label for="telefone">Seu telefone</label>
+    <input type="text" class="form-control" id="telefone" placeholder="Telefone">
+    <small id="email" class="form-text text-muted">E o seu telefone</small>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 
 </body>
 </html>

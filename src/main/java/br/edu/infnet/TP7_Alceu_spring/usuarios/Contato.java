@@ -1,5 +1,5 @@
 
-package model;
+package br.edu.infnet.TP7_Alceu_spring.usuarios;
 
 
 public class Contato {
